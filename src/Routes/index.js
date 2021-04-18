@@ -1,11 +1,12 @@
 // routes.jsx
 import React, { Suspense } from "react";
 import { Route, Switch, Redirect } from "react-router";
-import Blogs from "../Blogs";
 import Loader from "../Components/Loader";
 import withHeader from "../Components/Views/withHeader";
-import Post from "../Post";
 import { defaultRoute, blogs } from "./routingConstants";
+
+const Blogs = React.lazy(() => import("../Blogs"));
+const Post = React.lazy(() => import("../Post"));
 
 const Routes = () => (
   <Suspense fallback={<Loader isLoading={true} />}>
