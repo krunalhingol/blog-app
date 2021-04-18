@@ -1,0 +1,11 @@
+.header {
+  padding: 2rem;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-title {
+    font-size: 2rem;
+  }
+}

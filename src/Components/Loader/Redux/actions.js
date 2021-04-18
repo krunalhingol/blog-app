@@ -1,4 +1,4 @@
-import types from './types';
+import types from "./types";
 
 export const startLoader = () => ({
   type: types.START_LOADER,
@@ -6,7 +6,10 @@ export const startLoader = () => ({
 export const stopLoader = () => ({
   type: types.STOP_LOADER,
 });
-export default {
+
+const actions = {
   startLoader,
   stopLoader,
 };
+
+export default actions;

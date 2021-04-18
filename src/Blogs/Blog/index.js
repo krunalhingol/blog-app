@@ -1,14 +1,13 @@
 import React from "react";
+import "./style.scss";
 
 const Blog = (props) => {
-  const { data } = props;
-  const { userId, id, title, body } = data;
+  const { data, onClick } = props;
+  const { title, body } = data;
   return (
-    <div className="blog">
-      {userId}
-      {id}
-      {body}
-      {title}
+    <div className="blog-card" onClick={onClick}>
+      <div className="blog-title">{title}</div>
+      <div className="blog-body">{body}</div>
     </div>
   );
 };

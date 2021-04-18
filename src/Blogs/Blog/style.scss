@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+.blog-card {
+  background-color: $white;
+  border-radius: 7px;
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 20rem;
+  .blog-title,
+  .blog-body,
+  .blog-user {
+    color: $dark-grey;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .blog-title {
+    color: $dark-blue;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
