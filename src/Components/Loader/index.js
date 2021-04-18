@@ -10,9 +10,9 @@ const LoaderComponent = (props) => {
     return null;
   }
   return (
-    <div class="overlay">
-      <div class="overlay__inner">
-        <div class="overlay__content">
+    <div className="overlay">
+      <div className="overlay__inner">
+        <div className="overlay__content">
           <Loader
             type="Bars"
             color="#cecece"
